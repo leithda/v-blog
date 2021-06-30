@@ -51,7 +51,7 @@
 6. 验证安装成功
 
    ```bash
-   sudo docker run hello-world
+   
    ```
 
    
@@ -64,9 +64,15 @@
    sudo docker version  # 查看docker版本号
    ```
 
+8. 验证安装成功
+
+   ```bash
+   sudo docker run hello-world
+   ```
+
    
 
-8. 将当前用户(此时可以使用blog登录)加入到`docker`用户组
+9. 将当前用户(此时可以使用blog登录)加入到`docker`用户组
 
    - 新增`docker`用户组，已存在可忽略
 
