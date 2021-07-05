@@ -1,0 +1,4 @@
+spring:
+  # i18n 国际化
+  messages:
+    encoding: utf-8
