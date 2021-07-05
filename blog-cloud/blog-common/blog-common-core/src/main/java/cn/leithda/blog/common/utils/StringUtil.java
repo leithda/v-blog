@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
  *
  * @author 黎士达
  * @version 2021/7/5
- * @desc
+ * @desc 自定义字符串工具类
  */
 public class StringUtil extends StringUtils {
 }

@@ -3,6 +3,7 @@ package cn.leithda.blog.common.exception;
 import cn.leithda.blog.common.utils.I18nUtils;
 import cn.leithda.blog.common.utils.StringUtil;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
@@ -12,9 +13,10 @@ import java.util.Objects;
  *
  * @author leithda
  * @version 2021/7/5
- * @desc 业务异常
+ * @desc 基础异常
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class BaseException extends RuntimeException {
 
     @Autowired

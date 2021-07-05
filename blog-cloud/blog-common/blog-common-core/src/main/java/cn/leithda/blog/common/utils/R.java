@@ -1,6 +1,6 @@
 package cn.leithda.blog.common.utils;
 
-import cn.leithda.blog.common.exception.CommErrorCode;
+import cn.leithda.blog.common.exception.BaseRespCode;
 import lombok.Data;
 
 /**
@@ -109,12 +109,12 @@ public class R<T> {
 
     /**
      * 失败响应
-     * @param commErrorCode 通用响应枚举
+     * @param baseRespCode 通用响应枚举
      * @param <T> 泛型
      * @return 响应
      */
-    public static <T> R<T> fail(CommErrorCode commErrorCode) {
-        return fail(commErrorCode.getCode(), commErrorCode.getMessage(), null);
+    public static <T> R<T> fail(BaseRespCode baseRespCode) {
+        return fail(baseRespCode.getCode(), baseRespCode.getMessage(), null);
     }
 
 
